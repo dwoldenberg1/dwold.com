@@ -1,0 +1,150 @@
+* {
+    /* Reset the default styles. 
+    Use border-box because it's easier! */
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+body {
+  background:#1a2125;
+  color:aliceblue;
+  font-family:'Open Sans', sans-serif;
+  font-weight:300;
+  margin:0 auto;
+  
+  /* Click-and-drag or text-selection doesn't make sense. */
+  /* Or long-tap on webkit phones. */
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+
+main {
+  /* Use a max-width so that we have 4 columns */
+  max-width:680px;
+  margin:auto;
+  padding:20px;
+}
+
+ul {
+  /* We don't need actual bullets */
+  list-style:none;
+}
+
+li {
+  float:left; /* So that they wrap */
+  height:150px;
+  width:150px;
+  margin:5px; /* The gaps between them */
+  
+  text-transform:capitalize;
+  
+  /*transition may need prefixes in some browsers */
+  -webkit-transition:.2s -webkit-transform, 1s opacity;
+  -moz-transition:   .2s -moz-transform, 1s opacity;
+  -o-transition:     .2s -o-transform, 1s opacity;
+  transition:        .2s transform, 1s opacity;
+  
+  /*transform*/
+  -webkit-transform:perspective(800px);
+  -moz-transform:perspective(800px);
+  -ms-transform:perspective(800px);
+  -o-transform:perspective(800px);
+  transform:perspective(800px);
+  
+  /*transform-style*/
+  -webkit-transform-style:preserve-3d;
+  -moz-transform-style:preserve-3d;
+  -ms-transform-style:preserve-3d;
+  -o-transform-style:preserve-3d;
+  transform-style:preserve-3d;
+  -webkit-transform-origin-x:50%;
+  -webkit-transform-origin-y:50%;
+  
+  text-align:center;
+  cursor:pointer;
+}
+
+/* When moused over, rotate it! */
+li:hover {
+  /*transform*/
+  -webkit-transform:perspective(800px) rotate3d(0, 0, 1, 5deg);
+  -moz-transform:perspective(800px) rotate3d(0, 0, 1, 5deg);
+  -ms-transform:perspective(800px) rotate3d(0, 0, 1, 5deg);
+  -o-transform:perspective(800px) rotate3d(0, 0, 1, 5deg);
+  transform:perspective(800px) rotate3d(0, 0, 1, 5deg);
+} 
+
+/* It'd be neat to have double-width tiles */
+.span2{
+  width:310px;
+}
+
+/* Icon and number */
+li i{
+  font-size:60px;
+  margin:35px 0 0;
+}
+
+/* Text label on tiles */
+li span{
+  position:absolute;
+  bottom:8px;
+  left:8px;
+}
+
+/* Specialized background colours */
+.about{
+  background:rgb(27, 161, 226);
+}
+.projects{
+  background:rgb(240, 163, 10);
+}
+.contactme{
+  background:rgb(119, 221, 119);
+}
+.k4k{
+  background:rgb(130, 111, 214);
+}
+.ihw{
+  background:rgb(255, 105, 97);
+}
+.living{
+  background:rgb(162, 0, 37);
+}
+.hwchron{
+  background:rgb(100, 118, 135);
+}
+
+.title{
+    font-size: 80px;
+    text-align: center;
+    font-style: italic;
+}
+
+.subtitle {
+	font-size: 20px;
+	text-align: center;
+}
+
+.bottom{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  background-color: gray;
+  text-align: left;
+  opacity: 30%;
+  color: white;
+}
+
+.contact {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	margin-right: 2px;
+}
