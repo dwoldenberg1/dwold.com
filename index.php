@@ -5,6 +5,7 @@
 		<meta name="detectify-verification" 
     			content="b0a9db528e2be60512632426449c6c97" />
 		<title>David Woldenberg</title>
+		<!--Big thanks to Mike Kenyon (https://www.codecademy.com/MrMKenyon/codebits/79Stl2) and to Alvaro Trigo(http://alvarotrigo.com/fullPage/) -->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	    <script type="text/javascript" src="/public/js/functions.js"></script>
 	    <script type="text/javascript" src="/public/js/jquery.fullPage.js"></script>
@@ -34,7 +35,7 @@
 					[ David Woldenberg ]
 				</div>
 				<div class="subtitle">
-					{ Web developer | Student | Entrepreneur }
+					{ Programmer | Student | Entrepreneur }
 				</div>
 				<main>
 					<ul>
@@ -55,9 +56,9 @@
 					<span>About Me</span>
 				</div>
 				<div id="about-body">
-				<p>My Name is David Woldenberg and I am a programmer. I became interested in the art after an introductory course in ninth grade and have since entrhalled myself in it. My expertise is in web programming, but I am learning IOS development and pretty much anything that interests me.</p>
+				<p>My Name is David Woldenberg and I am a programmer. I became interested in the art after an introductory course in ninth grade and have since enthralled myself in it. My expertise is in web programming, but I am actively learning iOS development and pretty much anything that interests me.</p>
 				<br> 
-				<p>I graduated from Harvard Westlake School, where I took four years of comptuer science courses. I am now a student at the Unviersity of Chicago, where I am majoring in Computer Science and Economics. I like to create web apps and web sites, but I'm always open to working on something new.</p>
+				<p>I graduated from Harvard Westlake School, where I took four years of comptuer science courses. I am now a student at the University of Chicago, where I am majoring in Computer Science and Economics. I mostly like to create web apps and web sites, but I'm always open to working on something new and exciting.</p>
 				</div>
 			</div>
 			<div id="Projects" class="section">
@@ -71,7 +72,10 @@
 			        <a href="#hwchron"><li class="hwchron" data-menuanchor="hwchron"><i class="fa fa-newspaper-o"></i><span>HW Chronicle</span></li></a> 
 				</ul>
 				<div class="projectLine">
-					<a href="http://eyes.nasa.gov/eyes-on-exoplanets.html">Eyes On Exoplanets</a> - I did some unit testing for the folk's at JPL on their amazing software "Eyes on Exoplanets"
+					<a href="https://github.com/dwoldenberg1/One-Click">One Click</a> - A social networking iPhone app that I am in the process of creating
+				</div>
+				<div class="projectLine">
+					<a href="http://eyes.nasa.gov/eyes-on-exoplanets.html">Eyes On Exoplanets</a> - I did some unit testing for the folks at JPL in Pasadena on their amazing software "Eyes on Exoplanets"
 				</div>
 				<div class="projectLine">
 					<a href="http://stringsofstrength.com">Strings of Strength</a> - A bit of an unfinished project, but I am managing this website and will eventually get it up and running.
@@ -105,12 +109,16 @@
 				</div>
 			</div>
 			<div id="k4k" class="section">
+			afsdfasf
 			</div>
 			<div id="ihw" class="section">
+			asfasdfas
 			</div>
 			<div id="living  planet" class="section">
+			asfasdfsad
 			</div>
 			<div id="hwchronicle" class="section">
+			asfasd
 			</div>
 		</div>
 		<div class="bottom">
