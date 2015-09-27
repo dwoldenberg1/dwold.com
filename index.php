@@ -5,13 +5,13 @@
 		<meta name="detectify-verification" 
     			content="b0a9db528e2be60512632426449c6c97" />
 		<title>David Woldenberg</title>
-		<link rel="stylesheet" href="http://dwold.com/public/css/style.css" />
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	    <script type="text/javascript" src="/public/js/functions.js"></script>
 	    <script type="text/javascript" src="/public/js/jquery.fullPage.js"></script>
 
 	    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="http://dwold.com/public/css/style.css" />
 
 		<!--Adapted from: https://www.codecademy.com/MrMKenyon/codebits/79Stl2/edit-->
 
@@ -38,20 +38,53 @@
 				</div>
 				<main>
 					<ul>
-			        	<a href="#about"><li class="about" data-menuanchor="about"><i class="fa fa-phone"></i><span>About</span></li></a>
-			        	<a href="#projects"><li class="projects span2" data-menuanchor="projects"><i class="fa fa-comments"></i><span>Projects</span></li></a>
-			        	<a href="#contactme"><li class="contactme" data-menuanchor="contactme"><i class="fa fa-user"></i><span>Contact Me</span></li></a>
-			        	<a href="#k4k"><li class="k4k" data-menuanchor="k4k"><i class="fa fa-search"></i><span>K4K</span></li></a>
-			        	<a href="#ihw"><li class="ihw" data-menuanchor="ihw"><i class="fa fa-envelope"></i><span>iHW</span></li></a>
-			        	<a href="#living"><li class="living" data-menuanchor="living"><i class="fa fa-instagram"></i><span>Living Planet</span></li></a>
-			        	<a href="#hwchron"><li class="hwchron" data-menuanchor="hwchron"><i class="fa fa-gears"></i><span>HW Chronicle</span></li></a>
+			        	<a href="#about"><li class="about" data-menuanchor="about"><i class="fa fa-user"></i><span>About</span></li></a>
+			        	<a href="#projects"><li class="projects span2" data-menuanchor="projects"><i class="fa proj fa-cubes"></i><i class="fa proj fa-database"></i><i class="fa proj fa-server"></i><span style="padding-left: 40%;">Projects</span></li></a>
+			        	<a href="#contactme"><li class="contactme" data-menuanchor="contactme"><i class="fa fa-phone"></i><span>Contact Me</span></li></a>
+			        	<a href="#k4k"><li class="k4k" data-menuanchor="k4k"><i class="fa fa-graduation-cap"></i><span>K4K</span></li></a>
+			        	<a href="#ihw"><li class="ihw" data-menuanchor="ihw"><i class="fa fa-desktop"></i><span>iHW</span></li></a>
+			        	<a href="#living"><li class="living" data-menuanchor="living"><i class="fa fa-globe"></i><span>Living Planet</span></li></a>
+			        	<a href="#hwchron"><li class="hwchron" data-menuanchor="hwchron"><i class="fa fa-newspaper-o"></i><span>HW Chronicle</span></li></a>
 			        </ul>
 			    </main>
 			</div>
 			<div id="About" class="section">
-				My Name is David Woldenberg and I am a programmer. I became interested in the art after an introductory course in ninth grade and have since entrhalled myself in it. My expertise is in web programming, but I am learning IOS development and pretty much anything that interests me. I graduated from Harvard Westlake School, where I took four years of comptuer science courses. I am now a student at the Unviersity of Chicago, where I am majoring in Computer Science and Economics. I like to create web apps and web sites, but I'm always open to working on something new.
+				<div id="aboutPhoto">
+				</div>
+				<div id="about-title">
+					<span>About Me</span>
+				</div>
+				<div id="about-body">
+				<p>My Name is David Woldenberg and I am a programmer. I became interested in the art after an introductory course in ninth grade and have since entrhalled myself in it. My expertise is in web programming, but I am learning IOS development and pretty much anything that interests me.</p>
+				<br> 
+				<p>I graduated from Harvard Westlake School, where I took four years of comptuer science courses. I am now a student at the Unviersity of Chicago, where I am majoring in Computer Science and Economics. I like to create web apps and web sites, but I'm always open to working on something new.</p>
+				</div>
 			</div>
 			<div id="Projects" class="section">
+			</div>
+			<div id="contacts" class="section">
+				<div id="contact-title">
+					Contact Me
+				</div>
+				<div class="contacts" id="emails">
+					<a href="mailto:dwoldenberg1@gmail.com"><i class="fa fa-envelope"></i> - Send me an email</a>
+				</div>
+				<div class="contacts" id="links">
+					<a href="http://www.linkedin.com/pub/david-woldenberg/aa/b45/825"><i class="fa fa-linkedin"></i> - Check out my Linkedin</a>
+				</div>
+				<div class="contacts" id="gits">
+					<a href="http://github.com/dwoldenberg1"><i class="fa fa-github"></i> - View my projects on Github</a>
+				</div>
+				<div class="contacts" id="stacks">
+					<a href="http://stackoverflow.com/users/2698266/wold"><i class="fa fa-stack-overflow"></i> - Look at my Stack Overflow profile</a>
+				</div>
+				<div class="contacts" id="fbs">
+					<a href="https://www.facebook.com/david.woldenberg.7"><i class="fa fa-facebook"></i> - Check out my Facebook profile</a>
+				</div>
+				<div class="contacts" id="twitts">
+					<a href="https://twitter.com/goldenwolden"><i class="fa fa-twitter"></i> - View my tweets</a>
+				</div>
+			</div>
 			</div>
 			<div id="k4k" class="section">
 			</div>
@@ -64,22 +97,27 @@
 		</div>
 		<div class="bottom">
 			<div class="contact" id="email">
-				<i class="fa fa-phone"></i>
+				<a href="mailto:dwoldenberg1@gmail.com"><i class="fa fa-envelope"></i></a>
 			</div>
 			<div class="contact" id="link">
-				<i class="fa fa-phone"></i>
+				<a href="http://www.linkedin.com/pub/david-woldenberg/aa/b45/825"><i class="fa fa-linkedin"></i></a>
 			</div>
 			<div class="contact" id="git">
-				<i class="fa fa-phone"></i>
+				<a href="http://github.com/dwoldenberg1"><i class="fa fa-github"></i></a>
 			</div>
 			<div class="contact" id="stack">
-				<i class="fa fa-phone"></i>
+				<a href="http://stackoverflow.com/users/2698266/wold"><i class="fa fa-stack-overflow"></i></a>
 			</div>
 			<div class="contact" id="fb">
-				<i class="fa fa-phone"></i>
+				<a href="https://www.facebook.com/david.woldenberg.7"><i class="fa fa-facebook"></i></a>
 			</div>
 			<div class="contact" id="twitt">
-				<i class="fa fa-phone"></i>
+				<a href="https://twitter.com/goldenwolden"><i class="fa fa-twitter"></i></a>
+			</div>
+			<div class="contact" id="topArrow" class="mainSec" data-menuanchor="mainSec">
+				<a href="#mainSec">
+					<i class="fa fa-arrow-circle-o-up"></i>
+				</a>
 			</div>
 		</div>
 		<script>

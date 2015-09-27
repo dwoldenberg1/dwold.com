@@ -135,8 +135,8 @@ li span{
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 20px;
-  background-color: gray;
+  height: 40px;
+  background: rgba(117,117,117,0.6);
   text-align: left;
   opacity: 30%;
   color: white;
@@ -146,5 +146,99 @@ li span{
 	display: inline;
 	margin: 0;
 	padding: 0;
-	margin-right: 2px;
+	margin-right: 8px;
+}
+
+a {
+	color: rgba(255,255,255,0.81);
+}
+
+main li {
+	text-align: center;
+}
+
+.fa {
+	font-size: 450%;
+}
+
+.contact .fa {
+	font-size: 200%;
+	margin-top: 8px;
+}
+
+.contact a:hover {
+	color: rgba(0,146,194,0.89);
+}
+
+.proj {
+	padding-right: 8px;
+}
+
+#topArrow {
+	float: right;
+}
+
+/* Section custom styles 
+########################*/
+
+/* about */
+#about-body {
+	display: inline-block;
+	position: absolute;
+	font-weight: 400;
+	font-size: 20px;
+	width: 30%;
+	padding-top: 14%;
+	float: right;
+}
+
+#about-title {
+	font-weight: 500;
+	font-size: 60px;
+	padding-bottom: 5%;
+	padding-top: 7%;
+	display: inline-block;
+	float: right;
+	position: absolute;
+}
+
+#aboutPhoto {
+	display: inline-block; 
+	width: 600px;
+	height: 600px;
+	border-radius: 300px;
+	-webkit-border-radius: 300px;
+	-moz-border-radius: 300px;
+	background: url(http://scontent.xx.fbcdn.net/hphotos-xta1/v/t1.0-9/11949395_942048579188171_1603127539139629997_n.jpg?oh=3449810be20d5cb21a88b2e8cc74a96b&oe=5697EE2A) no-repeat;
+	border: 10px solid white;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 5%; 
+}
+
+/* contact */
+
+#contact-title {
+	font-weight: 500;
+	font-size: 70px;
+	text-align: center;
+	padding-top: 5%;
+}
+
+.contacts {
+	font-size: 40px;
+}
+
+.contacts a {
+	text-decoration: none;
+}
+
+.contacts .fa {
+	font-size: 200%;
+	margin-top: 0.5%;
+	padding-left: 5%;
+}
+
+.contacts a:hover {
+	color: rgba(225,102,0,0.86);
 }
