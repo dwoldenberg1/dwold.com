@@ -72,16 +72,16 @@
 			        <a href="#hwchron"><li class="hwchron" data-menuanchor="hwchron"><i class="fa fa-newspaper-o"></i><span>HW Chronicle</span></li></a> 
 				</ul>
 				<div class="projectLine">
-					<a href="https://github.com/dwoldenberg1/One-Click">One Click</a> - A social networking iPhone app that I am in the process of creating
+					<a href="https://github.com/dwoldenberg1/One-Click" target="_blank">One Click</a> - A social networking iPhone app that I am in the process of creating
 				</div>
 				<div class="projectLine">
-					<a href="http://eyes.nasa.gov/eyes-on-exoplanets.html">Eyes On Exoplanets</a> - I did some unit testing for the folks at JPL in Pasadena on their amazing software "Eyes on Exoplanets"
+					<a href="http://eyes.nasa.gov/eyes-on-exoplanets.html" target="_blank">Eyes On Exoplanets</a> - I did some unit testing for the folks at JPL in Pasadena on their amazing software "Eyes on Exoplanets"
 				</div>
 				<div class="projectLine">
-					<a href="http://stringsofstrength.com">Strings of Strength</a> - A bit of an unfinished project, but I am managing this website and will eventually get it up and running.
+					<a href="http://stringsofstrength.com" target="_blank">Strings of Strength</a> - A bit of an unfinished project, but I am managing this website and will eventually get it up and running.
 				</div>
 				<div class="projectLine">
-					<a href="http://dwold.com/audioplayer/">Audio Player</a> - An old half-baked project where I tried to create an html5 audio player
+					<a href="http://dwold.com/audioplayer/" target="_blank">Audio Player</a> - An old half-baked project where I tried to create an html5 audio player
 				</div>
 					
 			</div>
@@ -93,19 +93,19 @@
 					<a href="mailto:dwoldenberg1@gmail.com"><i class="fa fa-envelope"></i> - Send me an email</a>
 				</div>
 				<div class="contacts" id="links">
-					<a href="http://www.linkedin.com/pub/david-woldenberg/aa/b45/825"><i class="fa fa-linkedin"></i> - Check out my Linkedin</a>
+					<a href="http://www.linkedin.com/pub/david-woldenberg/aa/b45/825" target="_blank"><i class="fa fa-linkedin"></i> - Check out my Linkedin</a>
 				</div>
 				<div class="contacts" id="gits">
-					<a href="http://github.com/dwoldenberg1"><i class="fa fa-github"></i> - View my projects on Github</a>
+					<a href="http://github.com/dwoldenberg1" target="_blank"><i class="fa fa-github"></i> - View my projects on Github</a>
 				</div>
 				<div class="contacts" id="stacks">
-					<a href="http://stackoverflow.com/users/2698266/wold"><i class="fa fa-stack-overflow"></i> - Look at my Stack Overflow profile</a>
+					<a href="http://stackoverflow.com/users/2698266/wold" target="_blank"><i class="fa fa-stack-overflow"></i> - Look at my Stack Overflow profile</a>
 				</div>
 				<div class="contacts" id="fbs">
-					<a href="https://www.facebook.com/david.woldenberg.7"><i class="fa fa-facebook"></i> - Check out my Facebook profile</a>
+					<a href="https://www.facebook.com/david.woldenberg.7" target="_blank"><i class="fa fa-facebook"></i> - Check out my Facebook profile</a>
 				</div>
 				<div class="contacts" id="twitts">
-					<a href="https://twitter.com/goldenwolden"><i class="fa fa-twitter"></i> - View my tweets</a>
+					<a href="https://twitter.com/goldenwolden" target="_blank"><i class="fa fa-twitter"></i> - View my tweets</a>
 				</div>
 			</div>
 			<div id="k4k" class="section">
@@ -126,19 +126,19 @@
 				<a href="mailto:dwoldenberg1@gmail.com"><i class="fa fa-envelope"></i></a>
 			</div>
 			<div class="contact" id="link">
-				<a href="http://www.linkedin.com/pub/david-woldenberg/aa/b45/825"><i class="fa fa-linkedin"></i></a>
+				<a href="http://www.linkedin.com/pub/david-woldenberg/aa/b45/825" target="_blank"><i class="fa fa-linkedin"></i></a>
 			</div>
 			<div class="contact" id="git">
-				<a href="http://github.com/dwoldenberg1"><i class="fa fa-github"></i></a>
+				<a href="http://github.com/dwoldenberg1" target="_blank"><i class="fa fa-github"></i></a>
 			</div>
 			<div class="contact" id="stack">
-				<a href="http://stackoverflow.com/users/2698266/wold"><i class="fa fa-stack-overflow"></i></a>
+				<a href="http://stackoverflow.com/users/2698266/wold" target="_blank"><i class="fa fa-stack-overflow"></i></a>
 			</div>
 			<div class="contact" id="fb">
-				<a href="https://www.facebook.com/david.woldenberg.7"><i class="fa fa-facebook"></i></a>
+				<a href="https://www.facebook.com/david.woldenberg.7" target="_blank"><i class="fa fa-facebook"></i></a>
 			</div>
 			<div class="contact" id="twitt">
-				<a href="https://twitter.com/goldenwolden"><i class="fa fa-twitter"></i></a>
+				<a href="https://twitter.com/goldenwolden" target="_blank"><i class="fa fa-twitter"></i></a>
 			</div>
 			<div class="contact" id="topArrow" class="mainSec" data-menuanchor="mainSec">
 				<a href="#mainSec">
