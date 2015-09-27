@@ -61,6 +61,25 @@
 				</div>
 			</div>
 			<div id="Projects" class="section">
+				<div id="project-title">
+					My Projects
+				</div>
+				<ul id="popular">
+					<a href="#k4k"><li class="k4k" data-menuanchor="k4k"><i class="fa fa-graduation-cap"></i><span>K4K</span></li></a>
+			        <a href="#ihw"><li class="ihw" data-menuanchor="ihw"><i class="fa fa-desktop"></i><span>iHW</span></li></a>
+			        <a href="#living"><li class="living" data-menuanchor="living"><i class="fa fa-globe"></i><span>Living Planet</span></li></a>
+			        <a href="#hwchron"><li class="hwchron" data-menuanchor="hwchron"><i class="fa fa-newspaper-o"></i><span>HW Chronicle</span></li></a> 
+				</ul>
+				<div class="projectLine">
+					<a href="http://eyes.nasa.gov/eyes-on-exoplanets.html">Eyes On Exoplanets</a> - I did some unit testing for the folk's at JPL on their amazing software "Eyes on Exoplanets"
+				</div>
+				<div class="projectLine">
+					<a href="http://stringsofstrength.com">Strings of Strength</a> - A bit of an unfinished project, but I am managing this website and will eventually get it up and running.
+				</div>
+				<div class="projectLine">
+					<a href="http://dwold.com/audioplayer/">Audio Player</a> - An old half-baked project where I tried to create an html5 audio player
+				</div>
+					
 			</div>
 			<div id="contacts" class="section">
 				<div id="contact-title">
@@ -84,7 +103,6 @@
 				<div class="contacts" id="twitts">
 					<a href="https://twitter.com/goldenwolden"><i class="fa fa-twitter"></i> - View my tweets</a>
 				</div>
-			</div>
 			</div>
 			<div id="k4k" class="section">
 			</div>
