@@ -181,6 +181,13 @@ main li {
 /* Section custom styles 
 ########################*/
 
+.gen-title {
+	font-weight: 500;
+	font-size: 70px;
+	text-align: center;
+	padding-top: 5%;
+}
+
 /* about */
 #about-body {
 	display: inline-block;
@@ -253,7 +260,7 @@ main li {
 	font-weight: 500;
 	font-size: 70px;
 	text-align: center;
-	padding-top: 5%;
+	padding-top: 2%;
 }
 
 .contacts {
@@ -272,4 +279,29 @@ main li {
 
 .contacts a:hover {
 	color: rgba(225,102,0,0.86);
+}
+
+/* k4k */
+
+#k4k-title{
+	padding-top: 1%;
+	padding-bottom: 5%;
+}
+
+#k4k-body {
+	display: inline-block;
+	position: absolute;
+	font-weight: 400;
+	font-size: 20px;
+	padding-left: 4%;
+	width: 40%;
+	float: left;
+}
+
+#k4k-photo {
+	background: url(http://dwold.com/public/img/K4K.png) no-repeat;
+	display: inline-block;
+	float: right;
+	width: 700px;
+	height: 700px;
 }

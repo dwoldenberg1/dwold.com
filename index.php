@@ -13,6 +13,8 @@
 	    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="http://dwold.com/public/css/style.css" />
+		
+		<link href="/public/img/favicon.ico" rel="icon" type="image/x-icon">
 
 		<!--Adapted from: https://www.codecademy.com/MrMKenyon/codebits/79Stl2/edit-->
 
@@ -22,7 +24,7 @@
 		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		  ga('create', 'UA-XXXXXXXXXXXXXXX', 'auto');
+		  ga('create', 'UA-68161822-1', 'auto');
 		  ga('send', 'pageview');
 
 		</script>
@@ -42,10 +44,10 @@
 			        	<a href="#about"><li class="about" data-menuanchor="about"><i class="fa fa-user"></i><span>About</span></li></a>
 			        	<a href="#projects"><li class="projects span2" data-menuanchor="projects"><i class="fa proj fa-cubes"></i><i class="fa proj fa-database"></i><i class="fa proj fa-server"></i><span style="padding-left: 40%;">Projects</span></li></a>
 			        	<a href="#contactme"><li class="contactme" data-menuanchor="contactme"><i class="fa fa-phone"></i><span>Contact Me</span></li></a>
-			        	<a href="#k4k"><li class="k4k" data-menuanchor="k4k"><i class="fa fa-graduation-cap"></i><span>K4K</span></li></a>
-			        	<a href="#ihw"><li class="ihw" data-menuanchor="ihw"><i class="fa fa-desktop"></i><span>iHW</span></li></a>
-			        	<a href="#living"><li class="living" data-menuanchor="living"><i class="fa fa-globe"></i><span>Living Planet</span></li></a>
-			        	<a href="#hwchron"><li class="hwchron" data-menuanchor="hwchron"><i class="fa fa-newspaper-o"></i><span>HW Chronicle</span></li></a>
+			        	<a href="#k4kdata"><li class="k4k" data-menuanchor="k4kdata"><i class="fa fa-graduation-cap"></i><span>K4K</span></li></a>
+			        	<a href="#ihwdata"><li class="ihw" data-menuanchor="ihwdata"><i class="fa fa-desktop"></i><span>iHW</span></li></a>
+			        	<a href="#livingdata"><li class="living" data-menuanchor="livingdata"><i class="fa fa-globe"></i><span>Living Planet</span></li></a>
+			        	<a href="#hwchrondata"><li class="hwchron" data-menuanchor="hwchrondata"><i class="fa fa-newspaper-o"></i><span>HW Chronicle</span></li></a>
 			        </ul>
 			    </main>
 			</div>
@@ -62,14 +64,14 @@
 				</div>
 			</div>
 			<div id="Projects" class="section">
-				<div id="project-title">
+				<div class="gen-title">
 					My Projects
 				</div>
 				<ul id="popular">
-					<a href="#k4k"><li class="k4k" data-menuanchor="k4k"><i class="fa fa-graduation-cap"></i><span>K4K</span></li></a>
-			        <a href="#ihw"><li class="ihw" data-menuanchor="ihw"><i class="fa fa-desktop"></i><span>iHW</span></li></a>
-			        <a href="#living"><li class="living" data-menuanchor="living"><i class="fa fa-globe"></i><span>Living Planet</span></li></a>
-			        <a href="#hwchron"><li class="hwchron" data-menuanchor="hwchron"><i class="fa fa-newspaper-o"></i><span>HW Chronicle</span></li></a> 
+					<a href="#k4kdata"><li class="k4k" data-menuanchor="k4kdata"><i class="fa fa-graduation-cap"></i><span>K4K</span></li></a>
+			        <a href="#ihwdata"><li class="ihw" data-menuanchor="ihwdata"><i class="fa fa-desktop"></i><span>iHW</span></li></a>
+			        <a href="#livingdata"><li class="living" data-menuanchor="livingdata"><i class="fa fa-globe"></i><span>Living Planet</span></li></a>
+			        <a href="#hwchrondata"><li class="hwchron" data-menuanchor="hwchrondata"><i class="fa fa-newspaper-o"></i><span>HW Chronicle</span></li></a> 
 				</ul>
 				<div class="projectLine">
 					<a href="https://github.com/dwoldenberg1/One-Click" target="_blank">One Click</a> - A social networking iPhone app that I am in the process of creating
@@ -109,7 +111,23 @@
 				</div>
 			</div>
 			<div id="k4k" class="section">
-			afsdfasf
+				<div class="gen-title" id="k4k-title">
+					Koding4Kids
+				</div>
+				<div id="k4k-photo">
+				</div>
+				<div id="k4k-body">
+					An organization aimed at teaching kids how to program and sparking an interest in technology
+					<p>
+					We teach lessons in MIT's Scratch, Java, javascript, HTML and CSS, and even 3D printing! We range from the basics to more advanced pieces of software. Kids of any age can come, but most of our events are targeted at kids between the ages of 7 - 15 years old. 
+					</p>
+					<br>
+					<p>
+					We don't think anyone should be limited by what their school does or doesn't offer and we want to give everyone a chance to learn. We welcome all levels of interest and expertise, whether that person doesn't even own a computer or they have been making video games since they were five.
+					</p>
+					<br>
+					<a href="http://koding4kids.com/about" target="_blank">Check out the site here!</a>	
+				</div>
 			</div>
 			<div id="ihw" class="section">
 			asfasdfas
@@ -150,7 +168,7 @@
 			$(document).ready(function() {
 				$('#fullpage').fullpage({
 					sectionsColor: ['black', 'rgb(27, 161, 226)', 'rgb(240, 163, 10)', 'rgb(119, 221, 119)', 'rgb(130, 111, 214)', 'rgb(255, 105, 97)', 'rgb(162, 0, 37)', 'rgb(100, 118, 135)'],
-					anchors: ['mainSec', 'about', 'projects', 'contactme', 'k4k', 'ihw', 'living', 'hwchron'],
+					anchors: ['mainSec', 'about', 'projects', 'contactme', 'k4kdata', 'ihwdata', 'livingdata', 'hwchrondata'],
 					menu: '#menu'
 				});
 			});
