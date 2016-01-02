@@ -141,7 +141,7 @@
 					</p>
 					<br>
 					<p>
-					I worked on the content mangement system, which involved both UI design and backend programming. I used <a href="https://www.filestack.com/">Filepicker.io (now filestack)</a> for image and video integration. The application itself is built with a few frameworks, namely <a href="http://twig.sensiolabs.org/">twig</a> and <a href="http://www.redbeanphp.com/index.php"> RedBeanPHP </a>.
+					I worked on the content mangement system, which involved both UI design and backend programming. I used <a href="https://www.filestack.com/" target="_blank">Filepicker.io (now filestack)</a> for image and video integration. The application itself is built with a few frameworks, namely <a href="http://twig.sensiolabs.org/" target="_blank">twig</a> and <a href="http://www.redbeanphp.com/index.php" target="_blank"> RedBeanPHP </a>.
 					</p>
 					<br>
 					<p>
@@ -164,11 +164,11 @@
 					</p>
 					<br>
 					<p>
-					This project was kind of a silly visualization of environmental problems that we face in the 21st century. Regardless, it was a lot of fun to make and was a great experience. The projec utilized <a href="https://www.meteor.com/">Meteor</a> most notably as well as <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API">WebGL</a> for some imges and transitions.
+					This project was kind of a silly visualization of environmental problems that we face in the 21st century. Regardless, it was a lot of fun to make and was a great experience. The projec utilized <a href="https://www.meteor.com/" target="_blank">Meteor</a> most notably as well as <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API" target="_blank">WebGL</a> for some imges and transitions.
 					</p>
 					<br>
 					<p>
-					You can check out my devpost account <a href="http://devpost.com/dwoldenberg1">here</a> to stay up to date on my latest hackathon activity and check out all of my cool projects.
+					You can check out my devpost account <a href="http://devpost.com/dwoldenberg1" target="_blank">here</a> to stay up to date on my latest hackathon activity and check out all of my cool projects.
 					</p>
 				</div>
 			</div>
@@ -181,11 +181,11 @@
 				</div>
 				<div id="hwchron-body" class="content-body">
 					<p>
-					The Harvard-Westlake Chronicle (or the HW Chronicle) is the official student newspaper of Harvard-Westlake school. The website was designed by a student in 2012, and there had been a webmaster each year in charge of updating and mainting the code.
+					The <a href="http://hwchronicle.com" target="_blank">Harvard-Westlake Chronicle (or the HW Chronicle)</a> is the official student newspaper of Harvard-Westlake school. The website was designed by a student in 2012, and there had been a webmaster each year in charge of updating and mainting the code.
 					</p>
 					<br>
 					<p>
-					I was the webmaster for the 2014-2015 eidition, but in 2015 (when I graduated), the site was moved to a predesigned wordpress theme under the direction of a new advisor on the paper. As a result, the website I had worked on is no longer available, but the code still exists on the <a href="https://github.com/Harvard-WestlakeChronicle/TheChronicle/tree/hwchronicle_secure" >github here</a>.</a>.
+					I was the webmaster for the 2014-2015 eidition, but in 2015 (when I graduated), the site was moved to a predesigned wordpress theme under the direction of a new advisor on the paper. As a result, the website I had worked on is no longer available, but the code still exists on the <a href="https://github.com/Harvard-WestlakeChronicle/TheChronicle/tree/hwchronicle_secure" target="_blank">github here</a>.</a>.
 					</p>
 					<br>
 					<p>
