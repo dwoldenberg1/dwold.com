@@ -30,7 +30,7 @@
 		</script>
 	</head>
 
-	<body>
+	<body style="min-width: 1338px; min-height: 689px;">
 		<div id="fullpage">
 			<div id="mainSec" class="section">
 				<div class="title">
@@ -111,12 +111,12 @@
 				</div>
 			</div>
 			<div id="k4k" class="section">
-				<div class="gen-title" id="k4k-title">
+				<div class="gen-title content-title">
 					Koding4Kids
 				</div>
-				<div id="k4k-photo">
+				<div id="k4k-photo" class="content-photo">
 				</div>
-				<div id="k4k-body">
+				<div class="content-body">
 					An organization aimed at teaching kids how to program and sparking an interest in technology
 					<p>
 					We teach lessons in MIT's Scratch, Java, javascript, HTML and CSS, and even 3D printing! We range from the basics to more advanced pieces of software. Kids of any age can come, but most of our events are targeted at kids between the ages of 7 - 15 years old. 
@@ -130,13 +130,68 @@
 				</div>
 			</div>
 			<div id="ihw" class="section">
-			asfasdfas
+				<div class="gen-title content-title">
+					iHW
+				</div>
+				<div id="ihw-photo" class="content-photo">
+				</div>
+				<div class="content-body">
+					<p>
+					A media center for Harvard-Westlake School (My high school), designed primarily for the purpose of displaying the daily schedule and current time.
+					</p>
+					<br>
+					<p>
+					I worked on the content mangement system, which involved both UI design and backend programming. I used <a href="https://www.filestack.com/">Filepicker.io (now filestack)</a> for image and video integration. The application itself is built with a few frameworks, namely <a href="http://twig.sensiolabs.org/">twig</a> and <a href="http://www.redbeanphp.com/index.php"> RedBeanPHP </a>.
+					</p>
+					<br>
+					<p>
+					In addition to reworking the CMS and adding new functionality to it, I also administered the files. I facilitated the transition of up-keep to a non-technical faculty member and student.
+					</p>
+					<br>
+					<a href="http://ihwapp.com/" target="_blank">Check out the homepage here!</a>	
+				</div>
 			</div>
 			<div id="living  planet" class="section">
-			asfasdfsad
+				<div class="gen-title content-title">
+					Living Planet
+				</div>
+				<div id="lp-photo" class="content-photo">
+					<image src="http://dwold.com/public/img/koding.svg" height="400" width="400">
+				</div>
+				<div class="content-body">
+					<p>
+					This project was for the first Koding Global Hackathon, which my friends and I entered. Though we did not win, we made it it to the top 100 (of 517 submitted projects). After this I went on to participate in HackHarvard in the fall of 2015 and have been attending hackathons since.
+					</p>
+					<br>
+					<p>
+					This project was kind of a silly visualization of environmental problems that we face in the 21st century. Regardless, it was a lot of fun to make and was a great experience. The projec utilized <a href="https://www.meteor.com/">Meteor</a> most notably as well as <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API">WebGL</a> for some imges and transitions.
+					</p>
+					<br>
+					<p>
+					You can check out my devpost account <a href="http://devpost.com/dwoldenberg1">here</a> to stay up to date on my latest hackathon activity and check out all of my cool projects.
+					</p>
+				</div>
 			</div>
 			<div id="hwchronicle" class="section">
-			asfasd
+			<div class="gen-title content-title">
+					HW Chronicle
+				</div>
+				<div id="hwchron-photo" class="content-photo">
+					<img src="http://dwold.com/public/img/hwchronicle.jpg" height="400" width="400">
+				</div>
+				<div id="hwchron-body" class="content-body">
+					<p>
+					The Harvard-Westlake Chronicle (or the HW Chronicle) is the official student newspaper of Harvard-Westlake school. The website was designed by a student in 2012, and there had been a webmaster each year in charge of updating and mainting the code.
+					</p>
+					<br>
+					<p>
+					I was the webmaster for the 2014-2015 eidition, but in 2015 (when I graduated), the site was moved to a predesigned wordpress theme under the direction of a new advisor on the paper. As a result, the website I had worked on is no longer available, but the code still exists on the <a href="https://github.com/Harvard-WestlakeChronicle/TheChronicle/tree/hwchronicle_secure" >github here</a>.</a>.
+					</p>
+					<br>
+					<p>
+					In my shift as webmaster, I added a facebook/twitter widget to the homepage, did multiple "special features" with full page unique designs, reworked the search engine, and did other miscelaneous tasks around the site. I also recovered the site from a hack over the summer and integrated an automated backup system with github as a preventative measure. 
+					</p>
+				</div>
 			</div>
 		</div>
 		<div class="bottom">
@@ -168,7 +223,8 @@
 			$(document).ready(function() {
 				$('#fullpage').fullpage({
 					sectionsColor: ['black', 'rgb(27, 161, 226)', 'rgb(240, 163, 10)', 'rgb(119, 221, 119)', 'rgb(130, 111, 214)', 'rgb(255, 105, 97)', 'rgb(162, 0, 37)', 'rgb(100, 118, 135)'],
-					anchors: ['mainSec', 'about', 'projects', 'contactme', 'k4kdata', 'ihwdata', 'livingdata', 'hwchrondata'],
+					anchors: ['mainSec', 'about', 'projects', 'contactme', 'k4kdata', 'ihwdata', 'livingdata', 'hwchrondata'],	
+					scrollingSpeed: 1200,
 					menu: '#menu'
 				});
 			});

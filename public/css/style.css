@@ -281,14 +281,14 @@ main li {
 	color: rgba(225,102,0,0.86);
 }
 
-/* k4k */
+/* content */
 
-#k4k-title{
+.content-title{
 	padding-top: 1%;
 	padding-bottom: 5%;
 }
 
-#k4k-body {
+.content-body {
 	display: inline-block;
 	position: absolute;
 	font-weight: 400;
@@ -298,10 +298,42 @@ main li {
 	float: left;
 }
 
-#k4k-photo {
-	background: url(http://dwold.com/public/img/K4K.png) no-repeat;
+.content-photo {
 	display: inline-block;
 	float: right;
 	width: 700px;
 	height: 700px;
 }
+
+/* k4k */
+
+#k4k-photo {
+	background: url(http://dwold.com/public/img/K4K.png) no-repeat;
+}
+
+/* ihw */
+
+#ihw-photo {
+	background: url(http://dwold.com/public/img/ihwappicon.png) no-repeat;
+}
+
+/* Living Planet */
+
+#lp-photo {
+	padding-left: 5%;	
+}
+
+/* hw chronicle */
+
+#hwchron-photo {
+	padding-left: 5%;
+}
+
+#hwchron-body {
+	font-size: 17px;
+}
+
+	
+
+
+
