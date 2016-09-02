@@ -126,7 +126,7 @@
 					We don't think anyone should be limited by what their school does or doesn't offer and we want to give everyone a chance to learn. We welcome all levels of interest and expertise, whether that person doesn't even own a computer or they have been making video games since they were five.
 					</p>
 					<br>
-					<a href="http://koding4kids.com/about" target="_blank">Check out the site here!</a>	
+					<a href="http://k4k.dwold.com/about" target="_blank">Check out the site here!</a>	
 				</div>
 			</div>
 			<div id="ihw" class="section">
