@@ -1,0 +1,74 @@
+==================================================================
+https://keybase.io/dwold
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://dwold.com
+  * I am dwold (https://keybase.io/dwold) on keybase.
+  * I have a public key with fingerprint FA9D 2E23 BBFC 2659 3304  8FAA 1134 FDCE DBC5 64B5
+
+To do so, I am signing this object:
+
+{
+    body: {
+        key: {
+            eldest_kid: 010131caa681da4e9d874e863f7b0aa3ab9cc6e275a321644c66b1dbeedf0cd9d1610a,
+            fingerprint: fa9d2e23bbfc265933048faa1134fdcedbc564b5,
+            host: keybase.io,
+            key_id: 1134fdcedbc564b5,
+            kid: 010131caa681da4e9d874e863f7b0aa3ab9cc6e275a321644c66b1dbeedf0cd9d1610a,
+            uid: 98dd5faabbb4308e75bc4c516d738d19,
+            username: dwold
+        },
+        service: {
+            hostname: dwold.com,
+            protocol: http:
+        },
+        type: web_service_binding,
+        version: 1
+    },
+    ctime: 1487755704,
+    expire_in: 157680000,
+    prev: 7e8345f8c74864a6a3b1d72e33618fb73a2f18cb24bab373239b1086acae35d6,
+    seqno: 10,
+    tag: signature
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owGtkntMW1UcxwtlRWombGMBEce8mYVIJfd9b0HHUPfCdlunISOSdPfccy5cW9ra
+FyDgYyKTsPlg4MKG25wQJoidYaCYLYAJYoTxEgEHhmQsmTMuIFXGIwxviSb+4Z+e
+f07O73y/n/P9/XLe36hWhYZsolcHJntgW0jfHaA60pI9XIwBByzCUosxK1rfkA0i
+t8dilSGWiuEETlCEKAgsT0CBRgbIczTiWUriAC4IlAAMosgikmMEiiRYmhZZFhAQ
+IAQlXIQGSLAELmB6TJLtucjldMl2j4KVBAMkEUkBIIkkyxgoCqd5SRAIgqIlKCII
+RIalAaMY8xzuoEMJBwQ3SpEdSk05WNbj/Yf+f87tXccZeAgZJR8AgKZwHnEMEGmR
+IVjIUTwkDEGhG7nsQj5S1LDAYYNYqR5TSj5ZRMGpBtv493WK6MhXXE6Xw+MQHTal
+nOfxOFODLk+RMygrQMDyN8ACZDtUBqgYfMjllh12LJVQlKJHDhIJmuc4huFwWo+h
+QqfsQhY5qGA4lseVFXwG+RQkh3iKZiRe5GiepQ8LrEApTXMkoiiW4CXAUQIpEbwI
+SBoIgOIokjIAAudZQRQQxUAWC/b0it2hwBWqR8hVoG451y54vC6ElWorQuPDVCGh
+Ks2G0ODfUmkjov75cGW7Iu+nnYg7ZoVk+Edkh3b0t4U+3+Sh21mmlFMX185FbyXH
+YtLTCjKNzVNVHXdrP55YJq51r4TXL4w0F0kPtmINu9QXdnxjrEt2Vd+zbh80lqGZ
+7Oikc+m/34zrChRFy2ejEsqoM5rG0dk/ww/OONrnfHLg8QeW3y0ePesfPz2936VP
+aNEc3Vh4OCct8eWpA906HX6p5oL324GLkfFX3Jsq45/NqYm52mG2Turrc4e2rvlP
+2k7W3bjfMDCmLTnVt/zDfOQXVXWlew/EPNYORpqeG29g5t7pSscKRfOepaH+1ZGx
+CY05IEydCLU+2fQmXn2cJ5ZuaoaG21pvNQ5YEFbZ1z9Zn3XLcN5nmlGbr1ec7qQi
+thlLBuv6vV2PTF9LUyHjhrCmlcXk2LyfsNmejKalEmm48cxu6xsRrnKTOX9v+Vu6
+p18zVzz/4TPfc5PbrKjm+J7Nif149+Dc1V+mzSGfxH43v3lfbULB+Zcq7wb0GZ9n
+mXSPLtp/LWuISTc6X6ioKkt51X99VduS7N/5c0pGeeBIolq7Q01MLD5854kuk9e2
+Za2xc3b76ovHLIHZcXUrrH6vtyrb1nvjq5jMzMv8B9HRnVzdwaTW+cYVXZ4rKXZL
+s997KG4njaX6Tbc1b3/pxoX2r+99Gm5fKMq6svrQ8OtRl3s+m/nR25ZzdHdtQu9T
+l8J0f/j+Ag==
+=ovfD
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/dwold
+
+==================================================================
+

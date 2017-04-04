@@ -12,6 +12,8 @@ body {
   font-family:'Open Sans', sans-serif;
   font-weight:300;
   margin:0 auto;
+  height: 100%;
+  width: 100%;
   
   /* Click-and-drag or text-selection doesn't make sense. */
   /* Or long-tap on webkit phones. */
@@ -193,7 +195,7 @@ main li {
 	display: inline-block;
 	position: absolute;
 	font-weight: 400;
-	font-size: 20px;
+	font-size: 110%;
 	width: 30%;
 	padding-top: 14%;
 	float: right;
@@ -201,12 +203,13 @@ main li {
 
 #about-title {
 	font-weight: 500;
-	font-size: 60px;
+	font-size: 330%;
 	padding-bottom: 5%;
 	padding-top: 7%;
 	display: inline-block;
 	float: right;
 	position: absolute;
+	white-space: nowrap;
 }
 
 #aboutPhoto {
@@ -217,6 +220,7 @@ main li {
 	-webkit-border-radius: 300px;
 	-moz-border-radius: 300px;
 	background: url(http://i.imgur.com/paeHAZP.jpg) no-repeat;
+	background-size: 600px 600px;
 	border: 10px solid white;
 	margin-left: 5%;
 	margin-right: 5%;
