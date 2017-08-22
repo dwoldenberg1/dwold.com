@@ -126,6 +126,7 @@ li span{
     font-size: 80px;
     text-align: center;
     font-style: italic;
+    white-space: nowrap;
 }
 
 .subtitle {
@@ -191,10 +192,14 @@ main li {
 }
 
 /* about */
+
+.about-cont {
+	position: absolute;
+	float: right;
+}
 #about-body {
 	display: inline-block;
 	position: absolute;
-	font-weight: 400;
 	font-size: 110%;
 	width: 30%;
 	padding-top: 14%;
@@ -202,7 +207,6 @@ main li {
 }
 
 #about-title {
-	font-weight: 500;
 	font-size: 330%;
 	padding-bottom: 5%;
 	padding-top: 7%;
@@ -336,6 +340,10 @@ main li {
 #hwchron-body {
 	font-size: 17px;
 }
+
+
+/* Misc */
+
 
 	
 
