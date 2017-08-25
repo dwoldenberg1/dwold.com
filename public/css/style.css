@@ -194,26 +194,29 @@ main li {
 /* about */
 
 .about-cont {
-	position: absolute;
-	float: right;
+	padding: 10px;
 }
 #about-body {
 	display: inline-block;
 	position: absolute;
 	font-size: 110%;
-	width: 30%;
-	padding-top: 14%;
-	float: right;
+	width: 45%;
+	margin-top: 500px;
+	left: 0;
+	right: 0;
 }
 
 #about-title {
 	font-size: 330%;
 	padding-bottom: 5%;
-	padding-top: 7%;
+	margin-top: 400px;
 	display: inline-block;
 	float: right;
 	position: absolute;
+	left: 0;
+	right: 0;
 	white-space: nowrap;
+	text-align: center;
 }
 
 #aboutPhoto {
@@ -226,9 +229,11 @@ main li {
 	background: url(http://i.imgur.com/paeHAZP.jpg) no-repeat;
 	background-size: 600px 600px;
 	border: 10px solid white;
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-top: 5%; 
+	zoom: 66%;
+	position: absolute;
+	left:0;
+	right:0;
+	margin: auto;
 }
 
 /* projects */
@@ -344,7 +349,9 @@ main li {
 
 /* Misc */
 
-
+.full-cont {
+	width: 100%;
+}
 	
 
 
