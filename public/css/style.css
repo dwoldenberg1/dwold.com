@@ -30,6 +30,7 @@ main {
   max-width:680px;
   margin:auto;
   padding:20px;
+  zoom: 100%;
 }
 
 ul {
@@ -134,6 +135,11 @@ li span{
 	text-align: center;
 }
 
+.top {
+	height: 80px;
+    border-bottom: 1px #adadad solid;
+}
+
 .bottom{
   position: fixed;
   bottom: 0;
@@ -148,8 +154,7 @@ li span{
 .contact {
 	display: inline;
 	margin: 0;
-	padding: 0;
-	margin-right: 8px;
+	padding: 0 7 7 7;
 }
 
 a {
