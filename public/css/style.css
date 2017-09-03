@@ -346,7 +346,8 @@ main li {
 
 .top {
 	height: 80px;
-    //border-bottom: 1px #adadad solid;
+    position: fixed;
+    width: 100%;
 }
 
 .bottom{
@@ -378,6 +379,28 @@ main li {
 	text-align: center;
 	left: 0;
 	right: 0;
+}
+
+#d-home {
+	position: absolute;
+	right: 5;
+	bottom: 0;
+}
+
+#d-home:hover svg path,
+#d-home:hover{
+	fill: rgba(0,146,194,0.89);
+	color: rgba(0,146,194,0.89);
+}
+
+.bottom-new{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  text-align: left;
+  opacity: 30%;
+  color: white;
 }
 	
 

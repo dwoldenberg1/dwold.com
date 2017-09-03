@@ -7,9 +7,18 @@
 		<title>David Woldenberg</title>
 		<!--Big thanks to Mike Kenyon (https://www.codecademy.com/MrMKenyon/codebits/79Stl2) and to Alvaro Trigo(http://alvarotrigo.com/fullPage/) -->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-	    <script type="text/javascript" src="/public/js/functions.js"></script>
+	    <script type="text/javascript" src="/public/js/nfunction.js"></script>
 	    <script type="text/javascript" src="/public/js/jquery.fullPage.js"></script>
 	    <script type="text/javascript" src="/public/js/three.js"></script>
+
+	    <!-- Three expansion libraries/https://threejs.org/examples/webgl_postprocessing_glitch.html -->
+	    <script type="text/javascript" src="/public/js/EffectComposer.js"></script>
+	    <script type="text/javascript" src="/public/js/GlitchPass.js"></script>
+	    <script type="text/javascript" src="/public/js/RenderPass.js"></script>
+	    <script type="text/javascript" src="/public/js/ShaderPass.js"></script>
+
+	    <script type="text/javascript" src="/public/js/DigitalGlitch.js"></script>
+	    <script type="text/javascript" src="/public/js/CopyShader.js"></script>
 
 	    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
@@ -29,11 +38,6 @@
 		  ga('send', 'pageview');
 
 		</script>
-		<script>
-			$(function(){
-				initVis();
-			});
-		</script>
 	</head>
 	<body>
 		<div class="top">
@@ -49,7 +53,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="bottom">
+		<div class="bottom-new">
+			<img id='d-home' src="/public/img/d.svg" height=50 width=50 />
+		</div>
+		<div class="bottom" style='display: none;'>
 			<div class="contact" id="email">
 				<a href="mailto:dwoldenberg1@gmail.com"><i class="fa fa-envelope"></i></a>
 			</div>
