@@ -135,22 +135,6 @@ li span{
 	text-align: center;
 }
 
-.top {
-	height: 80px;
-    border-bottom: 1px #adadad solid;
-}
-
-.bottom{
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 40px;
-  background: rgba(117,117,117,0.6);
-  text-align: left;
-  opacity: 30%;
-  color: white;
-}
-
 .contact {
 	display: inline;
 	margin: 0;
@@ -356,6 +340,44 @@ main li {
 
 .full-cont {
 	width: 100%;
+}
+
+/* New Style */
+
+.top {
+	height: 80px;
+    //border-bottom: 1px #adadad solid;
+}
+
+.bottom{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: rgba(117,117,117,0.6);
+  text-align: left;
+  opacity: 30%;
+  color: white;
+}
+
+.menu-item {
+	display: inline-block;
+	padding: 20px 8% 0 8%; //top, right, bottom, left
+	font-size: 25px;
+	font-family: monospace;
+}
+
+.menu-item span:hover {
+	color: rgba(0,146,194,0.89);
+	cursor: pointer;
+
+}
+
+.nav-cont {
+	position: absolute;
+	text-align: center;
+	left: 0;
+	right: 0;
 }
 	
 

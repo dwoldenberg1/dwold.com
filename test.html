@@ -9,6 +9,7 @@
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	    <script type="text/javascript" src="/public/js/functions.js"></script>
 	    <script type="text/javascript" src="/public/js/jquery.fullPage.js"></script>
+	    <script type="text/javascript" src="/public/js/three.js"></script>
 
 	    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
@@ -28,18 +29,23 @@
 		  ga('send', 'pageview');
 
 		</script>
+		<script>
+			$(function(){
+				initVis();
+			});
+		</script>
 	</head>
 	<body>
 		<div class="top">
 			<div class="nav-cont">
-				<div id="about">
-					About
+				<div class="menu-item" id="about">
+					<span>About</span>
 				</div>
-				<div id="projects">
-					Projects
+				<div class="menu-item" id="projects">
+					<span>Projects</span>
 				</div>
-				<div id="contact-me">
-					Contact
+				<div class="menu-item" id="contact-me">
+					<span>Contact</span>
 				</div>
 			</div>
 		</div>
@@ -64,7 +70,7 @@
 			</div>
 			<div class="contact" id="topArrow" class="mainSec" data-menuanchor="mainSec">
 				<a href="#mainSec">
-					<i class="fa fa-arrow-circle-o-up"></i>
+					<i class="fa fa-home"></i>
 				</a>
 			</div>
 		</div>		
