@@ -387,6 +387,11 @@ main li {
 	bottom: 0;
 }
 
+.svgd:hover {
+	cursor: pointer;
+	fill: rgba(0,146,194,0.89);
+}
+
 #d-home:hover svg path,
 #d-home:hover{
 	fill: rgba(0,146,194,0.89);

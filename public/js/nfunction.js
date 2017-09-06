@@ -10,9 +10,11 @@
 $(function(){
   initVis();
 
-  $('#d-home').hover(function(){
-    $(this).src
-  });
+  // $('#d-home').hover(function(){
+  //   $(this).attr("src", "/public/img/d2.svg");
+  // }).blur(function(){
+  //   $(this).attr("src", "/public/img/d.svg");
+  // });
 });
 
 function initVis() {
