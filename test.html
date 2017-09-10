@@ -22,7 +22,7 @@
 
 	    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="/public/css/style.css" />
+		<link rel="stylesheet" href="/public/css/nstyle.css" />
 		
 		<link href="/public/img/favicon.ico" rel="icon" type="image/x-icon">
 
@@ -42,45 +42,35 @@
 	<body>
 		<div class="top">
 			<div class="nav-cont">
-				<div class="menu-item" id="about">
-					<span>About</span>
+				<div data-menuanchor="about-sect" class="menu-item" id="about">
+					<a href="#about-sect"><span>About</span></a>
 				</div>
-				<div class="menu-item" id="projects">
-					<span>Projects</span>
+				<div data-menuanchor="projects-sect" class="menu-item" id="projects">
+					<a href="#project-sect"><span>Projects</span></a>
 				</div>
-				<div class="menu-item" id="contact-me">
-					<span>Contact</span>
+				<div data-menuanchor="contact-sect" class="menu-item" id="contact-me">
+					<a href="#contact-sect"><span>Contact</span></a>
 				</div>
 			</div>
 		</div>
-		<div class="bottom-new">
-			<object id='d-home' type="image/svg+xml" data="/public/img/d.svg" height=50 width=50></object>
-			<!-- <img id='d-home' src="/public/img/d.svg" height=50 width=50 /> -->
+		<div id="main-cont">
+			<div id="main-sect-cont" class="section">
+				Stuff
+			</div>
+			<div id="about-sect-cont" class="section">
+				Some Stuff
+			</div>
+			<div id="projects-sect-cont" class="section">
+				Some more stuff
+			</div>
+			<div id="contact-sect-cont" class="section">
+				even more stuff
+			</div>
 		</div>
-		<div class="bottom" style='display: none;'>
-			<div class="contact" id="email">
-				<a href="mailto:dwoldenberg1@gmail.com"><i class="fa fa-envelope"></i></a>
+		<div class="bottom">
+			<div data-menuanchor="main-sect" id="d-home">
+				<a href="#main-sect"><span>[d]</span></a>
 			</div>
-			<div class="contact" id="link">
-				<a href="http://www.linkedin.com/pub/david-woldenberg/aa/b45/825" target="_blank"><i class="fa fa-linkedin"></i></a>
-			</div>
-			<div class="contact" id="git">
-				<a href="http://github.com/dwoldenberg1" target="_blank"><i class="fa fa-github"></i></a>
-			</div>
-			<div class="contact" id="stack">
-				<a href="http://stackoverflow.com/users/2698266/wold" target="_blank"><i class="fa fa-stack-overflow"></i></a>
-			</div>
-			<div class="contact" id="fb">
-				<a href="https://www.facebook.com/david.woldenberg.7" target="_blank"><i class="fa fa-facebook"></i></a>
-			</div>
-			<div class="contact" id="twitt">
-				<a href="https://twitter.com/goldenwolden" target="_blank"><i class="fa fa-twitter"></i></a>
-			</div>
-			<div class="contact" id="topArrow" class="mainSec" data-menuanchor="mainSec">
-				<a href="#mainSec">
-					<i class="fa fa-home"></i>
-				</a>
-			</div>
-		</div>		
+		</div>
 	</body>
 </html>

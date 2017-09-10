@@ -10,31 +10,78 @@
 $(function(){
   initVis();
 
-  // $('#d-home').hover(function(){
-  //   $(this).attr("src", "/public/img/d2.svg");
-  // }).blur(function(){
-  //   $(this).attr("src", "/public/img/d.svg");
-  // });
+  $('#main-cont').fullpage({
+    anchors: ['main-sect', 'about-sect', 'project-sect', 'contact-sect'],
+    scrollingSpeed: 1000,
+    fadingEffect: true,
+    fixedElements: 'canvas',
+    css3: true,
+    menu: '.nav-cont',
+    afterSlideLoad: function(anchorlink, index){
+      if(index) { $($('.nav-cont').children()[index-1]).css("color", "#0092c2"); }
+      else                             { $('#d-home a').css("color", "#0092c2"); }
+    }
+  });
+
 });
 
 function initVis() {
+  /* see https://github.com/mrdoob/three.js/blob/master/examples/webgl_buffergeometry_drawcalls.html */
+  /* see https://github.com/mrdoob/three.js/blob/master/examples/webgl_postprocessing_glitch.html */
+
   var bgc = new THREE.Color( 0x1a2125 );
   var matrix = THREE.Group();
 
+  /* Config for Node Cloud */
+  var num_nodes = 50;
+  var positions, colors;
+  var nodes, node_positions;
+
+
+  /* Setting it up */
   tScene = new THREE.Scene();
   tScene.background = bgc;
   tCam = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+  tScene.add(matrix);
 
-  tRender = new THREE.WebGLRenderer();
+  tRender = new THREE.WebGLRenderer( { antialias: true });
+  tRender.setPixelRatio( window.devicePixelRatio );
   tRender.setSize( window.innerWidth, window.innerHeight );
   document.body.appendChild( tRender.domElement );
 
-  var geometry = new THREE.BoxGeometry( 1, 1, 1 );
-  var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-  var cube = new THREE.Mesh( geometry, material );
-  tScene.add( cube );
+  /* Spooky picture of me */
+  var dwold = new THREE.ImageUtils.loadTexture( '/public/img/dwold.jpeg' );
+  var pp = new THREE.MeshBasicMaterial( { map: dwold } );
+  var ppg = new THREE.PlaneGeometry(14, 17, 1, 1);
+  var PP = new THREE.Mesh(ppg, pp);
+  PP.position.set(0, 15, 0);
 
-  tCam.position.z = 5;
+  tScene.add(PP);
+
+  /* Node Cloud */
+  var line_segs = (num_nodes * num_nodes);
+
+  positions = new Float32Array( line_segs * 3 );
+  colors = new Float32Array( line_segs * 3 );
+
+  var pMaterial = new THREE.PointsMaterial( {
+    color: 0xFFFFFF,
+    size: 3,
+    blending: THREE.AdditiveBlending,
+    transparent: true,
+    sizeAttenuation: false
+  } );
+
+  nodes = new THREE.BufferGeometry();
+  node_positions = new Float32Array( num_nodes * 3 );
+
+
+
+
+
+  /* Glitching */
+
+  tCam.position.z = 40;
 
   tComp = new THREE.EffectComposer( tRender );
   tComp.addPass( new THREE.RenderPass( tScene, tCam ) );
@@ -45,11 +92,8 @@ function initVis() {
 
   function animate() {
     requestAnimationFrame( animate );
-
-    cube.rotation.x += 0.1;
-    cube.rotation.y += 0.1;
     
-    //tRender.render( tScene, tCam );
+    tRender.render( tScene, tCam );
     tComp.render();
   }
 

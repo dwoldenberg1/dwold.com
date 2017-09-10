@@ -1,0 +1,94 @@
+* {
+    /* Reset the default styles. 
+    Use border-box because it's easier! */
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+body {
+  background:#1a2125;
+  color:aliceblue;
+  font-family:'Open Sans', sans-serif;
+  font-weight:300;
+  margin:0 auto;
+  height: 100%;
+  width: 100%;
+  
+  /* Click-and-drag or text-selection doesn't make sense. */
+  /* Or long-tap on webkit phones. */
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+
+a {
+	color: #ffffff;
+}
+
+/* New Style */
+
+.top {
+	height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.bottom{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  text-align: left;
+  opacity: 30%;
+  color: white;
+  z-index: 1;
+}
+
+.menu-item {
+	display: inline-block;
+	padding: 20px 8% 0 8%; //top, right, bottom, left
+	font-size: 25px;
+	font-family: monospace;
+}
+
+.menu-item span:hover {
+	color: #0092c2;
+	cursor: pointer;
+}
+
+.menu-item > a, #d-home > a {
+	text-decoration: none;
+}
+
+#d-home > a:hover{
+	color: #0092c2;
+	cursor: pointer;
+}
+
+.nav-cont {
+	position: absolute;
+	text-align: center;
+	left: 0;
+	right: 0;
+}
+
+#d-home {
+	position: absolute;
+	right: 5;
+	bottom: 5;
+	font-size: 25px;
+	font-family: monospace;
+	font-style: italic;
+}
+
+/* Styling for THREE */
+canvas {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
