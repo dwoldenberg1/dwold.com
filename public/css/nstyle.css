@@ -65,7 +65,7 @@ a {
 	text-decoration: none;
 }
 
-#d-home > a:hover{
+#d-home > a:hover, .contact-item > a:hover{
 	color: #0092c2;
 	cursor: pointer;
 }
@@ -84,6 +84,45 @@ a {
 	font-size: 25px;
 	font-family: monospace;
 	font-style: italic;
+}
+
+.contact-bar {
+  position: relative;
+  top: 55%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#proj-cont {
+  position: relative;
+  top: 55%;
+  text-align: left;
+  height: 45%;
+}
+
+.proj-entry {
+  font-family: monospace;
+  overflow: auto;
+  padding: 0 10 10 10;
+}
+
+.proj {
+  display: inline;
+}
+
+.proj-title {
+  font-size: 25px;
+}
+
+.proj-desc {
+  font-size: 15px;
+}
+
+.contact-item {
+  display: inline-block;
+  padding-left: 10px;
+  font-size: 40px;
 }
 
 /* Styling for THREE */

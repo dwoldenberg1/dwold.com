@@ -10,6 +10,10 @@
 $(function(){
   initVis();
 
+
+
+
+
   $('#main-cont').fullpage({
     anchors: ['main-sect', 'about-sect', 'project-sect', 'contact-sect'],
     scrollingSpeed: 1000,
@@ -17,8 +21,10 @@ $(function(){
     fixedElements: 'canvas',
     css3: true,
     menu: '.nav-cont',
-    afterSlideLoad: function(anchorlink, index){
-      if(index) { $($('.nav-cont').children()[index-1]).css("color", "#0092c2"); }
+    afterLoad: function( anchorLink, index){
+      $('.nav-cont').children().children().css("color", "#ffffff");
+      $('#d-home a').css("color", "#ffffff");
+      if(index > 1) { $($('.nav-cont').children()[index-2]).children().css("color", "#0092c2"); }
       else                             { $('#d-home a').css("color", "#0092c2"); }
     }
   });
@@ -42,7 +48,7 @@ function initVis() {
   tScene = new THREE.Scene();
   tScene.background = bgc;
   tCam = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
-  tScene.add(matrix);
+//  tScene.add(matrix);
 
   tRender = new THREE.WebGLRenderer( { antialias: true });
   tRender.setPixelRatio( window.devicePixelRatio );
@@ -50,13 +56,44 @@ function initVis() {
   document.body.appendChild( tRender.domElement );
 
   /* Spooky picture of me */
-  var dwold = new THREE.ImageUtils.loadTexture( '/public/img/dwold.jpeg' );
-  var pp = new THREE.MeshBasicMaterial( { map: dwold } );
-  var ppg = new THREE.PlaneGeometry(14, 17, 1, 1);
-  var PP = new THREE.Mesh(ppg, pp);
-  PP.position.set(0, 15, 0);
+  var dload = new THREE.TextureLoader();
+  var pp, ppg, PP;
+  dload.load( 
+    '/public/img/dwold.jpeg',
+    function( texture ) {    
+      pp = new THREE.MeshBasicMaterial( { map: texture } );
+      ppg = new THREE.PlaneGeometry(15.5, 19.5, 1, 1);
+      PP = new THREE.Mesh(ppg, pp);
+      PP.position.set(0, 15, 0);
+      tScene.add(PP);
+    },
+    function ( xhr ) { console.log( (xhr.loaded / xhr.total * 100) + '% loaded' ); }
+  );
 
-  tScene.add(PP);
+  /* Title and whatnot */
+  var floader = new THREE.FontLoader();
+  
+  floader.load( 'public/js/pt_mono.json', function ( font ) {
+    var t;
+    var textShape = new THREE.BufferGeometry();
+    var textmesh = new THREE.MeshBasicMaterial( {
+      color: '#ffffff',
+      transparent: true,
+      opacity: 0.7
+    } );
+
+    var textmsg = "       { david woldenberg }\n\n[programmer | student | adventurer]";
+    var tshapes = font.generateShapes( textmsg, 1, 1);
+    var fg = new THREE.ShapeGeometry( tshapes );
+
+    fg.computeBoundingBox();
+    fg.translate( -14, 2, 0 );
+    textShape.fromGeometry( fg );;
+
+    t = new THREE.Mesh( textShape, textmesh );
+    tScene.add(t);
+  });
+
 
   /* Node Cloud */
   var line_segs = (num_nodes * num_nodes);
@@ -75,13 +112,9 @@ function initVis() {
   nodes = new THREE.BufferGeometry();
   node_positions = new Float32Array( num_nodes * 3 );
 
-
-
-
-
   /* Glitching */
 
-  tCam.position.z = 40;
+  tCam.position.z = 37;
 
   tComp = new THREE.EffectComposer( tRender );
   tComp.addPass( new THREE.RenderPass( tScene, tCam ) );
