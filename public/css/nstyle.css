@@ -38,17 +38,6 @@ a {
     z-index: 1;
 }
 
-.bottom{
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 40px;
-  text-align: left;
-  opacity: 30%;
-  color: white;
-  z-index: 1;
-}
-
 .menu-item {
 	display: inline-block;
 	padding: 20px 8% 0 8%; //top, right, bottom, left
@@ -65,8 +54,12 @@ a {
 	text-decoration: none;
 }
 
-#d-home > a:hover, .contact-item > a:hover{
-	color: #0092c2;
+#d-home{
+  z-index: 1;
+}
+
+#d-home a:hover, .contact-item > a:hover{
+	color: #0092c2 !important;
 	cursor: pointer;
 }
 
@@ -99,12 +92,17 @@ a {
   top: 55%;
   text-align: left;
   height: 45%;
+  color: black;
 }
 
 .proj-entry {
   font-family: monospace;
-  overflow: auto;
   padding: 0 10 10 10;
+  background: rgba(206, 206, 206, 0.58);
+}
+
+.proj-entry a {
+  color: black !important;
 }
 
 .proj {

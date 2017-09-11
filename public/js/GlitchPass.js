@@ -56,7 +56,10 @@ THREE.GlitchPass.prototype = Object.assign( Object.create( THREE.Pass.prototype 
 			this.uniforms[ 'distortion_y' ].value = THREE.Math.randFloat( 0, 1 );
 			this.curF = 0;
 			this.generateTrigger();
-
+		
+			/* regenerate tile map */
+			tScene.remove(tilelist);
+			doTiles();
 		} else if ( this.curF % this.randX < this.randX / 5 ) {
 
 			this.uniforms[ 'amount' ].value = Math.random() / 90;
