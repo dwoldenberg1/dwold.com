@@ -30,7 +30,8 @@ THREE.GlitchPass = function ( dt_size ) {
 	this.quad.frustumCulled = false; // Avoid getting clipped
 	this.scene.add( this.quad );
 
-	this.goWild = false;
+	this.goWild = true;
+	this.gwStart = true;
 	this.curF = 0;
 	this.generateTrigger();
 
@@ -46,7 +47,7 @@ THREE.GlitchPass.prototype = Object.assign( Object.create( THREE.Pass.prototype 
 		this.uniforms[ 'seed' ].value = Math.random();//default seeding
 		this.uniforms[ 'byp' ].value = 0;
 
-		if ( this.curF % this.randX == 0 || this.goWild == true ) {
+		if ( this.goWild == true && this.gwStart ) {
 
 			this.uniforms[ 'amount' ].value = Math.random() / 30;
 			this.uniforms[ 'angle' ].value = THREE.Math.randFloat( - Math.PI, Math.PI );
@@ -55,12 +56,18 @@ THREE.GlitchPass.prototype = Object.assign( Object.create( THREE.Pass.prototype 
 			this.uniforms[ 'distortion_x' ].value = THREE.Math.randFloat( 0, 1 );
 			this.uniforms[ 'distortion_y' ].value = THREE.Math.randFloat( 0, 1 );
 			this.curF = 0;
+			this.gwStart = false;
 			this.generateTrigger();
 		
-			/* regenerate tile map */
-			tScene.remove(tilelist);
-			doTiles();
-		} else if ( this.curF % this.randX < this.randX / 5 ) {
+			/* regenerate tile map, too buggy for now */
+			// tScene.remove(tilelist);
+			// setTimeout(function(){
+			// 	if(tilescalled){ 
+			// 		doTiles();
+			// 		tilescalled = false;
+			// 	}
+			// }, 200);
+		} else if ( this.goWild ) {
 
 			this.uniforms[ 'amount' ].value = Math.random() / 90;
 			this.uniforms[ 'angle' ].value = THREE.Math.randFloat( - Math.PI, Math.PI );
