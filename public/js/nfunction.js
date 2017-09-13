@@ -5,7 +5,7 @@
   var tRender;
   var tComp;
   var glitch;
-  var PP, t, tilelist, sb;
+  var PP, HP, t, tilelist, sb;
   var doTiles;
   var tilescalled = false;
   var mouse = { x: 0, y: 0 };
@@ -22,20 +22,24 @@ $(function(){
     glitch.goWild = true;
     hoveredorclicked = true;
     tScene.remove(sb);
+    tScene.remove(HP);
   }).mouseleave(function(){
     glitch.goWild = false;
     hoveredorclicked = false;
     tScene.add(sb);
+    Scene.add(HP);
   }).click(function(){
     tilescalled = true;
     glitch.gwStart = true;
     glitch.goWild = true;
     hoveredorclicked = true;
     tScene.remove(sb);
+    tScene.remove(HP);
     setTimeout(function(){
       glitch.goWild = false;
       hoveredorclicked = false;
       tScene.add(sb);
+      tScene.add(HP);
     },  1500);
   });
 
@@ -46,7 +50,7 @@ $(function(){
     keyboardScrolling: false,
     fadingEffect: true,
     fixedElements: 'canvas',
-    normalScrollElements: '#proj-cont',
+    normalScrollElements: '#proj-cont, #about-body',
     css3: true,
     menu: '.nav-cont',
     afterLoad: function( anchorLink, index){
@@ -138,6 +142,7 @@ function initVis() {
 
   /* Title and whatnot */
   var floader = new THREE.FontLoader();
+  var ploader = new THREE.TextureLoader();
 
   var dwload = function( texture ) { 
     var pp, ppg;
@@ -147,6 +152,19 @@ function initVis() {
     PP = new THREE.Mesh(ppg, pp);
     PP.position.set(-0.15, 12.5, 0);
 
+    /* Final adding of everything */ 
+
+    tScene.add(PP);
+    tScene.add(t);
+    tScene.add(sb);
+    tScene.add(HP);
+    doTiles(1);
+    tScene.add(tilelist);
+  }; 
+
+  var pload = function( texture ){
+    var pp, ppg;
+
     /* add spooky box */
 
     var sbtile = new THREE.PlaneGeometry(3.6, 5.3);
@@ -154,14 +172,13 @@ function initVis() {
     var tilesb = new THREE.MeshBasicMaterial( { color: '#000000', opacity: 1 });
     sb = new THREE.Mesh( sbtile, tilesb );
 
-    /* Final adding of everything */ 
+    pp = new THREE.MeshBasicMaterial( { map: texture } );
+    ppg = new THREE.PlaneGeometry(1.7, 1.6, 1, 1);
+    HP = new THREE.Mesh(ppg, pp);
+    HP.position.set(0, 13, 6);
 
-    tScene.add(PP);
-    tScene.add(t);
-    tScene.add(sb);
-    doTiles(1);
-    tScene.add(tilelist);
-  }; 
+    floader.load( 'public/js/pt_mono.json', fload);
+  };
 
   var fload = function ( font ) {
     var temp;
@@ -192,7 +209,7 @@ function initVis() {
     );
   };
 
-  floader.load( 'public/js/pt_mono.json', fload);
+  ploader.load('/public/img/hp2.png', pload);
 
 //  tScene.add(matrix);
 
@@ -243,8 +260,10 @@ function initVis() {
       if(!hoveredorclicked){
         if ( intersects.length > 0 ) {
           glitch.goWild = true;
+          tScene.remove(HP);
           tScene.remove(sb);
         } else {
+          tScene.add(HP);
           tScene.add(sb);
           glitch.goWild = false;
         }

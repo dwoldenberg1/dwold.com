@@ -61,14 +61,15 @@ a {
 	right: 0;
 }
 
-.about-body {
+#about-body {
   position: relative;
   top: 55%;
   height: 45%;
   font-family: monospace;
   text-align: left;
   color: white;
-  padding: 0 10 10 10;
+  padding: 10;
+  background: rgba(0, 0, 0, 0.75);
 }
 
 #proj-cont {
@@ -95,6 +96,10 @@ a {
 
 .proj-title {
   font-size: 25px;
+}
+
+.proj-header {
+  font-size: 30px;
 }
 
 .proj-desc {
