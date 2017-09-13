@@ -26,21 +26,18 @@ $(function(){
     glitch.goWild = false;
     hoveredorclicked = false;
     tScene.add(sb);
+  }).click(function(){
+    tilescalled = true;
+    glitch.gwStart = true;
+    glitch.goWild = true;
+    hoveredorclicked = true;
+    tScene.remove(sb);
+    setTimeout(function(){
+      glitch.goWild = false;
+      hoveredorclicked = false;
+      tScene.add(sb);
+    },  1500);
   });
-
-  /* pretty sure this is useless with the mouseleave */
-  // .click(function(){
-  //   tilescalled = true;
-  //   glitch.gwStart = true;
-  //   glitch.goWild = true;
-  //   hoveredorclicked = true;
-  //   tScene.remove(sb);
-  //   setTimeout(function(){
-  //     glitch.goWild = false;
-  //     hoveredorclicked = false;
-  //     tScene.add(sb);
-  //   },  1500);
-  // });
 
   $('#main-cont').fullpage({
     anchors: ['main-sect', 'about-sect', 'project-sect', 'contact-sect'],
@@ -175,12 +172,12 @@ function initVis() {
       opacity: 0.7
     } );
 
-    var textmsg = "       { david woldenberg }\n\n[programmer | student | adventurer]";
+    var textmsg = "        { david woldenberg }\n\n[programmer | creative | adventurer]";
     var tshapes = font.generateShapes( textmsg, 1, 100);
     var fg = new THREE.ShapeGeometry( tshapes );
 
     fg.computeBoundingBox();
-    fg.translate( -14.2, 1.4, 3 );
+    fg.translate( -15.2, 0.7, 3 );
     textShape.fromGeometry( fg );;
 
     t = new THREE.Mesh( textShape, textmesh );
