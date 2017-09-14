@@ -68,8 +68,10 @@ a {
   font-family: monospace;
   text-align: left;
   color: white;
+}
+
+#about-body > div {
   padding: 10;
-  background: rgba(0, 0, 0, 0.75);
 }
 
 #proj-cont {

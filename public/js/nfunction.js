@@ -58,6 +58,17 @@ $(function(){
       $('#d-home a').css("color", "#ffffff");
       if(index > 1) { $($('.nav-cont').children()[index-2]).children().css("color", "#0092c2"); }
       else                             { $('#d-home a').css("color", "#0092c2"); }
+
+      if(index == 1) {
+        var d = $('#about-body').find("div:last");
+        if(window.innerHeight * 2 >= d.offset().top + d.height()){
+          $('#about-body').css("background", "rgba(0, 0, 0, 0.75)");
+          $('#about-body > div').css("background", "none");
+        } else {
+          $('#about-body > div').css("background", "rgba(0, 0, 0, 0.75)");
+          $('#about-body').css("background", "none");
+        }
+      }
     }
   });
 
